@@ -7,6 +7,8 @@ and open the template in the editor.
 <html>
     <head>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +27,21 @@ and open the template in the editor.
                 background-color: chartreuse;
                 
             }
-            
+            img:hover{
+                border-style: outset;
+                border-width: 2px;
+                border-color: gold;
+                box-shadow: 5px 5px 5px darkmagenta;
+                
+            }
             
             
         </style>
+        <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
     </head>
     <body>
          <div class="navbar navbar-inverse navbar-fixed-top">
@@ -59,13 +72,13 @@ and open the template in the editor.
             <br>
             <center><div class="row">
         <div class="col-md-4">
-            <img class="img-rounded" src="https://www.rockhall.com/media/assets/inductees/default/james-brown.jpg" height="200" width="300" alt=""/>
+            <img class="img-rounded" data-toggle="tooltip" data-placement="bottom" title="James Brown" src="https://www.rockhall.com/media/assets/inductees/default/james-brown.jpg" height="200" width="300" alt=""/>
         </div>
         <div  class="col-md-4">
-            <img  class="img-rounded" src="http://www.rantsports.com/nfl/files/2014/12/12.-Eric-Dickerson.jpg" alt="" height="200" width="300" />
+            <img  class="img-rounded" data-toggle="tooltip" data-placement="bottom" title="Eric Dickerson" src="http://www.rantsports.com/nfl/files/2014/12/12.-Eric-Dickerson.jpg" alt="" height="200" width="300" />
             </div>
             <div class="col-md-4">
-                <img class="img-rounded" src="http://funnycrave.com/wp-content/uploads/2009/08/brett-favre-vikings-ab081809.jpg" alt="" height="200" width="300" />
+                <img class="img-rounded" data-toggle="tooltip" data-placement="bottom" title="Brett Favre" src="http://funnycrave.com/wp-content/uploads/2009/08/brett-favre-vikings-ab081809.jpg" alt="" height="200" width="300" />
                 </div>
                 </div></center>
     
